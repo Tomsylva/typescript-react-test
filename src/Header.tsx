@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 
 interface HeaderProps {
-    buttonText: string;
+    buttonText?: string;
 }
 
 function Header({buttonText}: HeaderProps) {

@@ -3,7 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import Header from "./Header";
 
-function App() {
+function App(): JSX.Element {
   return (
     <div className="App">
       <Header buttonText="Click Me"/>
