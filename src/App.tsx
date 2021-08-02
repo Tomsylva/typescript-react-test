@@ -2,8 +2,11 @@ import './App.css';
 // import Header from "./Header";
 
 import {Swiper, SwiperSlide} from "swiper/react";
-// import SwiperCore from "swiper";
+import SwiperCore, {Navigation, Pagination} from "swiper";
 import 'swiper/swiper.scss';
+import "swiper/swiper-bundle.css";
+
+SwiperCore.use([Navigation, Pagination])
 
 function App(): JSX.Element {
   return (
@@ -11,9 +14,9 @@ function App(): JSX.Element {
       {/* <Header buttonText="Click Me"/> */}
       <Swiper
       spaceBetween={50}
-      slidesPerView={3}
+      slidesPerView={1}
       onSlideChange={() => console.log('slide change')}
-      onSwiper={(swiper) => console.log(swiper)}
+      onSwiper={(swiper) => console.log(swiper)} navigation pagination
     >
       <SwiperSlide><div>
         <h1>HELLO</h1>
