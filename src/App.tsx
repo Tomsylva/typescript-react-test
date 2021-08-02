@@ -34,7 +34,6 @@ function App(): JSX.Element {
         <h1>BALLS</h1>
         <h3>You read right</h3>
         </div></SwiperSlide>
-      ...
     </Swiper>
     </div>
   );
