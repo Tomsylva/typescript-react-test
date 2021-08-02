@@ -12,6 +12,7 @@ function App(): JSX.Element {
   return (
     <div className="App">
       {/* <Header buttonText="Click Me"/> */}
+      <h1>Some other title</h1>
       <Swiper
       spaceBetween={50}
       slidesPerView={1}
